@@ -1,0 +1,27 @@
+[
+    {
+        "id":1,
+        "nombre": "manzana",
+        "stock":50,
+        "importe":270
+    },
+
+    {
+        "id":2,
+        "nombre": "banana",
+        "stock":60,
+        "importe":220
+    },
+    {
+        "id":3,
+        "nombre": "naranja",
+        "stock":30,
+        "importe":120
+    },
+    {
+        "id":4,
+        "nombre": "pera",
+        "stock":60,
+        "importe":200
+    }
+]
