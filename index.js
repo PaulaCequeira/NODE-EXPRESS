@@ -1,14 +1,24 @@
 const { Console } = require("console");
 const express= require("express");
 const app= express();
+
+//agrego para usar router
+//const productoRouter=require("./routes/products.router")
+//app.use("/productos", productoRouter);
+
+// otra forma, mas simple
+app.use("/productos", require("./routes/products.router"));
+
 const path=require("path");
 
 //SE AGREGA PUBLIC MANERA SIMPLE
 //app.use(express.static("public"));
 
+
+//midlewares para archivos estaticos y publicos
 app.use(express.static(path.join(__dirname ,"public")));
-
-
+//para usar post
+app.use(express.json());
 
 
 //da error cannot get
